@@ -456,8 +456,9 @@ GameObject:
   - component: {fileID: 1329898230}
   - component: {fileID: 1329898229}
   - component: {fileID: 1329898232}
-  - component: {fileID: 1329898231}
   - component: {fileID: 1329898228}
+  - component: {fileID: 1329898233}
+  - component: {fileID: 1329898231}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -560,9 +561,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1329898226}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16c0a995ca8df9d41a980045a8ff70eb, type: 3}
+  m_Script: {fileID: 11500000, guid: e42096ff0e6df324ba0249d9887027ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 1000
 --- !u!50 &1329898232
 Rigidbody2D:
   serializedVersion: 4
@@ -584,6 +586,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1329898233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329898226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab8d8902d560704591e8c4de2be5f89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpVelocity: 7
 --- !u!1 &1349670732
 GameObject:
   m_ObjectHideFlags: 0
