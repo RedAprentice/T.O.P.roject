@@ -14,6 +14,11 @@ How to Use Git(Hub)
 --------------------------------------------
 Download the GitHub Desktop app. It'll make things a bit easier.
 
+Getting Started
+1. From the application, clone the repo to where you want it.
+2. Fetch and pull the repo to make sure you got the repo and the stuff in it.
+3. Double check that you actually have some information and files.
+
 Steps to Take Before You Start a Session
 1. Make sure you are on the right branch.
 2. Update from master (if applicable).
