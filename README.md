@@ -61,9 +61,9 @@ Please for the love of god, avoid conflicts. This is the worst and most complica
 Conflicts will happen in Git when someone changes the same lines as someone else. Git will get confused, and someone will need to go in and manually choose which lines to use. Obviously, this is a pain in the ass. If you get a conflict, try to fix it before making your merge or commit.
 
 ## Structure to Follow with Branches
-Top level: Master Branch
+Top level: Master Branch ( [release #] . [master push #] . [bug fix number] )
 
-  This level should be stable and should alway run.
+  This level should be stable and should alway run. 
   
 2nd level: Development Branch
 
