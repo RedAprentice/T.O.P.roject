@@ -32,7 +32,7 @@ Careful about switching branches. Switching branches in the desktop app might le
 On the desktop app, the bottom right will allow you to make commits to your local branch.
 Make sure to push your changes and commits after you are done, so the changes are reflected in the cloud.
 
-## Reverting Commits - OOPS. I made an oopsie.
+## Reverting Commits - I made an oopsie.
 I don't recommend doing this unless: 1. Everything just broke and you don't know why; 2. Everything still broke, but this time it's a conflict and you don't want to deal with it.
 
 To revert a commit, go to the application and switch to the History tab. Right-click the commit you want reverted and say goodbye to your mistakes.
@@ -62,13 +62,17 @@ Conflicts will happen in Git when someone changes the same lines as someone else
 
 ## Structure to Follow with Branches
 Top level: Master Branch
+
   This level should be stable and should alway run.
   
 2nd level: Development Branch
+
   The branch we will combine changes and work out any bugs that come from that.
   
 3rd level: Personal Branch (or feature branch)
+
   Where you will likely be pushing most of your commits.
   
 4th level (optional): Feature Branch*
+
   If you want more control and have multiple branches for yourself, you can make more branches from your personal one for different purposes. Might be useful for different iterations of the same feature.
