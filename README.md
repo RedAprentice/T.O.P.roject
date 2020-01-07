@@ -32,6 +32,8 @@ Careful about switching branches. Switching branches in the desktop app might le
 On the desktop app, the bottom right will allow you to make commits to your local branch.
 Make sure to push your changes and commits after you are done, so the changes are reflected in the cloud.
 
+When committing, make sure to include any known bugs in the commit description.
+
 ## Reverting Commits - I made an oopsie.
 I don't recommend doing this unless: 1. Everything just broke and you don't know why; 2. Everything still broke, but this time it's a conflict and you don't want to deal with it.
 
