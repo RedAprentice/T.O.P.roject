@@ -1,17 +1,13 @@
 # That One Project
---------------------------------------------
 1. Goal
 
 # TRELLO: https://trello.com/b/MyatPLrz/that-one-place
---------------------------------------------
 1. Check every Planck Time Unit
 
 # Vision
---------------------------------------------
 Make something; thanks.
 
 # How to Use Git(Hub)
---------------------------------------------
 Download the GitHub Desktop app. It'll make things a bit easier.
 
 ## Getting Started
@@ -64,8 +60,7 @@ Please for the love of god, avoid conflicts. This is the worst and most complica
 
 Conflicts will happen in Git when someone changes the same lines as someone else. Git will get confused, and someone will need to go in and manually choose which lines to use. Obviously, this is a pain in the ass. If you get a conflict, try to fix it before making your merge or commit.
 
-Structure to Follow with Branches
---------------------------------------------
+## Structure to Follow with Branches
 Top level: Master Branch
   This level should be stable and should alway run.
   
