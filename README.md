@@ -2,13 +2,10 @@ That One Project
 --------------------------------------------
 1. Goal
 
-We like things.
---------------------------------------------
-2. Organization
-
 TRELLO: https://trello.com/b/MyatPLrz/that-one-place
 --------------------------------------------
-3. Summarization of Vision
+1. Check every time a Plank Time Unit
 
-Make something. Thanks.
+Vision
 --------------------------------------------
+Make something; thanks.
