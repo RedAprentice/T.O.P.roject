@@ -5,8 +5,8 @@ using UnityEngine;
 public class JumpImprovement : MonoBehaviour
 {
     Rigidbody2D rb; //Setting the character's Rigidbody component to rb, can call with rb.etc
-    public float fallMultiplier = 2.5f;
-    public float lowJumpMultiplier = 2f;
+    public float fallMultiplier = 1.5f;
+    public float lowJumpMultiplier = 1f;
 
     // Start is called before the first frame update
     void Start()
