@@ -15,7 +15,7 @@ public class Character : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.mass = 300; //Hardcode for character mass, adjust through this variable only, not through inspector.
+        rb.mass = 1; //Hardcode for character mass, adjust through this variable only, not through inspector.
         
     }
 
@@ -27,10 +27,12 @@ public class Character : MonoBehaviour
             bleftReq = true;
         }
 
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) // Cam remove 2nd Input if we don't want arrow key control.
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) // Can remove 2nd Input if we don't want arrow key control.
         {
             bRightReq = true;
         }
+
+
     }
 
     void FixedUpdate()
