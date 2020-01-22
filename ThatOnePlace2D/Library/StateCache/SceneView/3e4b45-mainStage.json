@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-2270.725341796875,"y":-1473.833984375,"z":-14165.921875},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":19.759061813354493,"orthographic":true}
-=======
-﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":1.9717462062835694,"y":-5.83668327331543,"z":-31.7608585357666},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":29.15031623840332,"orthographic":true}
->>>>>>> playerMovement
