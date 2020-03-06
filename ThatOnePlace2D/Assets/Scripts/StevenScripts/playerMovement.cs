@@ -5,12 +5,14 @@ using UnityEngine;
 public class playerMovement : MonoBehaviour
 {
     // Variables
-    public Rigidbody2D player; // Player Object
-    public float movementFactor = 5; // movement speed modifier
-    public float jumpFactor = 30; // jump height modifier
-    public float gravity = 10;
-    public string xControl = "Horizontal";
-    public string yControl = "Vertical";
+    [SerializeField] private Rigidbody2D player; // Player Object
+    [SerializeField] private BoxCollider2D boxCollider2D; // Player Collider
+    [SerializeField] private float movementFactor = 5; // movement speed modifier
+    [SerializeField] private float jumpFactor = 30; // jump height modifier
+    [SerializeField] private float bufferSpace = 0.5f; // extra space above the player can jump
+    [SerializeField] private float gravity = 10;
+    [SerializeField] private string xControl = "Horizontal";
+    [SerializeField] private string yControl = "Vertical";
     [SerializeField] private LayerMask m_GroundLayers;
     private float xInput;
     private float yInput;
@@ -32,12 +34,24 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        BasicMovement();
+
+
+
+    }
+
+    private void FixedUpdate()
+    {
+        CharacterChecks(); // idk if this should be here. As of here for cleaniness.
+    }
+
+    private void BasicMovement()
+    {
+
         curVelocity = player.velocity;
 
         xInput = Input.GetAxis(xControl); // I don't know if this will work, but hey.
         yInput = Input.GetAxis(yControl);
-
-
 
         if (xInput != 0)
         {
@@ -45,7 +59,7 @@ public class playerMovement : MonoBehaviour
             pVelocity.y = curVelocity.y;
             player.velocity = pVelocity;
         }
-        
+
         if (yInput != 0 && isGrounded == true)
         {
             isGrounded = false;
@@ -54,27 +68,18 @@ public class playerMovement : MonoBehaviour
             player.velocity = pVelocity;
         }
 
-
-
-    }
-
-    private void FixedUpdate()
-    {
-        CharacterChecks();
     }
 
     void CharacterChecks()
     {
-        Collider2D[] collided = Physics2D.OverlapCircleAll(groundCheck.position, groundRadius, m_GroundLayers);
-        for (int i = 0; i < collided.Length; i++)
+        RaycastHit2D collided = Physics2D.BoxCast(boxCollider2D.bounds.center, boxCollider2D.bounds.size, 0f, Vector2.down, bufferSpace, m_GroundLayers);
+
+        if (collided.collider != null)
         {
-            if (collided[i].gameObject != gameObject)
-            {
-                // do something later
-                isGrounded = true;
-                // TEST
-                Debug.Log("Hit");
-            }
+            // do something later
+            isGrounded = true;
+            // TEST
+            Debug.Log(collided.collider);
         }
     }
     
